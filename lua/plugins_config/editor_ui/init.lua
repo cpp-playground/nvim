@@ -5,15 +5,6 @@ local function show_global_diff()
 end
 
 
-function copilot_status()
-    local enabled = vim.g.copilot_enabled == 1
-    local ret = ""
-    if enabled then
-        ret = "ﯙ "
-    end
-    return ret
-end
-
 editor_ui.setup = function()
     -- INFO: Configuration of akinsho/bufferline.nvim
     -- Handles the file tabs element of the UI
@@ -76,8 +67,8 @@ editor_ui.setup = function()
             } },
             lualine_c = {},
             lualine_x = {},
-            lualine_y = { { "copilot_status()" }, { 'filetype', icon_only = false, icon = true },
-                { 'diagnostics',     always_visible = true } },
+            lualine_y = { { 'filetype', icon_only = false, icon = true },
+                { 'diagnostics', always_visible = true } },
             lualine_z = { 'location', { 'progress', separator = { left = '', right = '' } } }
         },
         inactive_sections = {

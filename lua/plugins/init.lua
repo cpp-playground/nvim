@@ -75,7 +75,6 @@ local use = function()
     }                                   --Finds stuff
     use "ghassan0/telescope-glyph.nvim" -- Find glyphs like 
     use "themercorp/themer.lua"
-    use "github/copilot.vim"
     use "FabijanZulj/blame.nvim"
     use { "ThePrimeagen/git-worktree.nvim",
         requires = {

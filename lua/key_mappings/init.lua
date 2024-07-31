@@ -85,11 +85,6 @@ key_mappings.setup = function()
     keymap("n", "<C-j>", "<cmd>wincmd j<CR>", { silent = true, desc = "Goto top window" })
     keymap("n", "<C-k>", "<cmd>wincmd k<CR>", { silent = true, desc = "Goto bottom window" })
 
-    -- Triggers copilot suggestion with Alt + space
-    keymap("i", "<F8>", "<Plug>(copilot-suggest)", { silent = true, desc = "Trigger copilot suggestion" })
-    keymap("i", "<F10>", "<Plug>(copilot-next)", { silent = true, desc = "Next copilot suggestion" })
-    keymap("i", "<F9>", "<Plug>(copilot-previous)", { silent = true, desc = "Previous copilot suggestion" })
-
     keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
 end
 
