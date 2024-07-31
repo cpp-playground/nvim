@@ -11,4 +11,4 @@ nvm install node
 sudo snap install nvim --edge --classic
 
 # Install the config
-git clone git@github.com:cpp-playground/nvim.git ~/.config/nvim
+git clone https://github.com/cpp-playground/nvim.git ~/.config/nvim
